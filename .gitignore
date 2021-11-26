@@ -1,11 +1,20 @@
-**/.DS_Store
-**/desktop.ini
+desktop.ini
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.sass-cache
+npm-debug.log
+node_modules
+builds
+package-lock.json
+public
+resources
 .idea/
 .vscode/
 lmp
 lmp.log
 lmp.pid
-vendor
 test/influxdb_config/*
 test/mysql_config/*
 

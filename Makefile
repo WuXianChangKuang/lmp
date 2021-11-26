@@ -11,8 +11,11 @@ DASHDIR = $(PRE)/grafana
 all:
 	go build -mod=vendor -o lmp main.go
 
+
+mysqlpasswdinit:
+	mysql -u root -p <./pkg/misc/mysqlpasswdinit.sql
 db:
-	mysql -u root -p <./misc/init.sql
+	mysql -u root -p <./pkg/misc/init.sql
 
 clean:
 	rm -rf lmp
